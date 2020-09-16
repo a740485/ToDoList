@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="addNewContentTableViewCell" customModule="ToDoList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdX-UD-N0z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <connections>
+                            <action selector="addNewContent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="R2e-JH-UVM"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HyD-h9-Yqn">
+                        <rect key="frame" x="135" y="0.5" width="50" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HyD-h9-Yqn" secondAttribute="height" id="8Wb-e5-ep0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DdX-UD-N0z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8FR-Ex-Oxo"/>
+                    <constraint firstItem="HyD-h9-Yqn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DKZ-4F-s8K"/>
+                    <constraint firstItem="HyD-h9-Yqn" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="GWL-F8-2gl"/>
+                    <constraint firstAttribute="trailing" secondItem="DdX-UD-N0z" secondAttribute="trailing" id="Jh1-OC-oLk"/>
+                    <constraint firstAttribute="bottom" secondItem="DdX-UD-N0z" secondAttribute="bottom" id="eV5-t3-LRb"/>
+                    <constraint firstItem="DdX-UD-N0z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kTT-X2-y34"/>
+                    <constraint firstItem="HyD-h9-Yqn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="umt-Ix-z0b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="139" y="117"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
